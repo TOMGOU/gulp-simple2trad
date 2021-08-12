@@ -17,7 +17,7 @@ module.exports = function(opt) {
 
     if (file.isStream()) {
       this.emit('end')
-      return new callback(PluginError('gulp-minify', 'Streaming not supported:' + file.path))
+      return new callback(PluginError('gulp-simple2trad', 'Streaming not supported:' + file.path))
     }
 
     let newSource = ''

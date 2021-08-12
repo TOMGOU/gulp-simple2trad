@@ -11,18 +11,15 @@ npm install gulp-simple2trad -D
 
 ```js
 const gulp = require('gulp')
-const cnchar = require('cnchar')
-const trad = require('cnchar-trad')
 const simple2trad = require('gulp-simple2trad')
 const through = require('through2')
-cnchar.use(trad)
 
 /**
  * 简体字翻译为繁体字
  */
 const translate = () => {
   return gulp.src('../dist/lixin/**/*')
-  .pipe(simple2trad())
+  .pipe(simple2trad({'餘額': '余額'}))
   .pipe(through.obj(function (chunk, enc, cb) {
     cb(null, chunk)
   }))
