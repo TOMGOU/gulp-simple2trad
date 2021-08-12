@@ -1,6 +1,6 @@
 {
   "name": "gulp-simple2trad",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "gulp plugin translate simple to trad",
   "main": "index.js",
   "scripts": {

@@ -7,8 +7,6 @@ cnchar.use(trad)
 module.exports = function(opt) {
   let options = opt || {}
 
-  options.output = options.output || {}
-
   function simple2trad(file, encoding, callback) {
     if (file.isNull()) {
       this.push(file)
